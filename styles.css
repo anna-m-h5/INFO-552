@@ -1,0 +1,130 @@
+body {
+        font-family: 'Courier New', Courier, monospace;
+        margin: 0px;
+    }   
+   
+#page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    margin-bottom: 20px;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    top: 0;
+    border-bottom:solid;
+    border-top: solid;
+    border-bottom-color: black;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #CDADFF; 
+}
+
+.navlinks a.active {
+    background-color: #ADFFCC;
+} 
+
+.navlinks a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.navlinks a:hover:not(.active) {
+    background-color: #ADFFCC;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    flex-grow: 1;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.heading-sub {
+    font-size: medium;
+}
+
+h2 {
+    padding-left:10px;
+}
+
+.heading-content {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.sub-content {
+    font-style: italic;
+    margin-top: 0px;
+}
+
+.column {
+    float: left;
+    }
+
+.column-side {
+    background-color: #CDADFF;
+    padding: 10px;
+}
+
+.column-middle {
+    background-color: #FFCCAD;
+}
+
+.photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: #EBDEFF;
+    color: black;
+}
+.footer {
+    background-color: #ADFFCC;
+    padding: 12px;
+    text-align: center;
+    border:solid;
+    border-color: black;
+    margin-top: 20px;
+}
+.row::after {
+content: "";
+display: table;
+clear: both;
+}
+
+@media screen and (max-width: 600px) {
+.column.side, .column.middle {
+    width: 100%;
+}
+}
+p {
+    padding-left: 20px;
+}
